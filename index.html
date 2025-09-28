@@ -3,119 +3,31 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MichaelSoftware Store</title>
+<title>The MichaelSoftware EXE & APK Store</title>
 <style>
-  body {
-    font-family: Arial, sans-serif;
-    background: #111;
-    color: #eee;
-    margin: 0;
-    padding: 0;
-  }
-
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 20px;
-    padding: 20px;
-  }
-
-  .game-card {
-    background: #222;
-    border: 2px solid #555;
-    padding: 15px;
-    border-radius: 10px;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-  }
-
-  .game-card h3 {
-    margin: 10px 0;
-  }
-
-  .download-btn {
-    padding: 10px 15px;
-    background: #ff0;
-    border: none;
-    cursor: pointer;
-    font-weight: bold;
-    margin-top: 10px;
-  }
-
-  /* Modal pop-up */
-  .popup {
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: #111;
-    border: 3px solid red;
-    padding: 20px;
-    z-index: 1000;
-    width: 400px;
-    max-width: 90%;
-    border-radius: 12px;
-    color: #fff;
-  }
-
-  .popup-header {
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-
-  .popup-desc, .popup-desc-en {
-    margin-bottom: 10px;
-    font-size: 14px;
-  }
-
-  .popup-download-btn {
-    background: red;
-    color: #fff;
-    border: none;
-    padding: 10px;
-    width: 100%;
-    cursor: pointer;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-
-  .close-btn {
-    background: #555;
-    border: none;
-    padding: 8px;
-    cursor: pointer;
-    width: 100%;
-    font-weight: bold;
-    color: #fff;
-  }
-
-  /* Subtle notification */
-  .subtle-notif {
-    position: fixed;
-    bottom: 20px;
-    right: -300px;
-    background: #333;
-    color: #ff0;
-    padding: 15px;
-    border-radius: 8px;
-    border: 2px solid #ff0;
-    transition: right 0.5s ease;
-    z-index: 900;
-    max-width: 250px;
-  }
-
-  .subtle-notif.show {
-    right: 20px;
-  }
-
+body { font-family: Arial, sans-serif; background:#121212; color:#eee; margin:0; padding:0; }
+h1, h2 { text-align:center; margin:10px; }
+.grid-container { display:grid; grid-template-columns: repeat(auto-fit,minmax(300px,1fr)); gap:15px; padding:15px; }
+.game-card { background:#1e1e1e; padding:15px; border-radius:10px; position:relative; box-shadow:0 0 10px #000; cursor:pointer; }
+.game-title { font-weight:bold; font-size:1.2em; margin-bottom:5px; }
+.game-desc { font-size:0.9em; margin-bottom:10px; }
+.download-btn { margin:5px; padding:10px; border:none; border-radius:5px; cursor:pointer; background:#ff6f61; color:#fff; }
+.download-btn:hover { background:#ff3b2e; }
+.popup, .subtle-popup { position:fixed; padding:15px; background:#222; color:#fff; border-radius:8px; box-shadow:0 0 15px #000; display:none; z-index:1000; }
+.popup { top:50%; left:50%; transform:translate(-50%,-50%); width:80%; max-width:500px; }
+.subtle-popup { top:10px; right:10px; width:250px; }
+.popup-header { font-weight:bold; font-size:1.1em; margin-bottom:5px; }
+.popup-desc, .popup-desc-en { font-size:0.9em; margin-bottom:10px; }
+.close-btn { padding:8px 12px; margin-right:5px; background:#555; color:#fff; border:none; border-radius:5px; cursor:pointer; }
+.close-btn:hover { background:#888; }
+.popup-download-btn { padding:10px 15px; background:#ff6f61; color:#fff; border:none; border-radius:5px; cursor:pointer; }
+.popup-download-btn:hover { background:#ff3b2e; }
 </style>
 </head>
 <body>
 
-<h1 style="text-align:center; margin-top:20px;">MichaelSoftware EXE and APK Store⚡🔥💥</h1>
+<h1>The MichaelSoftware EXE & APK Store</h1>
+<h2>MichaelSoft/MichaelSoftware Store</h2>
 
 <!-- Random broken English + Arabic + Hindi lines sprinkled -->
 <p style="text-align:center; font-size:14px;">مرحبا दोस्त, welcome to zee madness! यहाँ कुछ crazy stuffs for you 💣💥</p>
