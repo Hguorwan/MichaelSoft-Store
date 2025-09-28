@@ -506,6 +506,90 @@
         .minecraft-popup-download-btn {
             background: linear-gradient(145deg, #FF9800, #F57C00);
         }
+        /* Apple Security Alert Pop-up - Gray iPiss-Off Imitation */
+        .apple-popup-content {
+            background: #f2f2f7;
+            color: #000;
+            border-radius: 15px;
+            padding: 25px;
+            max-width: 350px;
+            text-align: left;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+            border: 1px solid #d1d1d6;
+        }
+        .apple-popup-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #000;
+            margin-bottom: 10px;
+        }
+        .apple-popup-error {
+            font-size: 14px;
+            color: #ff3b30;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .apple-popup-desc {
+            font-size: 14px;
+            color: #000;
+            margin-bottom: 15px;
+            line-height: 1.4;
+        }
+        .apple-phone {
+            font-size: 16px;
+            color: #007aff;
+            text-decoration: none;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .apple-phone:hover {
+            text-decoration: underline;
+        }
+        .apple-close {
+            background: #007aff;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 15px;
+        }
+        /* CClaner Pop-up - Squeaky Clean Blue Bullshit (Like a Fresh Enema) */
+        .cclaner-popup-content {
+            background: linear-gradient(145deg, #00BCD4, #0097A7);
+            color: #fff;
+            border: 2px solid #B2EBF2;
+            animation: clean 1.5s infinite;
+        }
+        @keyframes clean {
+            0% { box-shadow: 0 0 5px #00BCD4; }
+            50% { box-shadow: 0 0 15px #FFEB3B; }
+            100% { box-shadow: 0 0 5px #00BCD4; }
+        }
+        .cclaner-popup-header {
+            color: #FFEB3B;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .cclaner-popup-download-btn {
+            background: linear-gradient(145deg, #4CAF50, #2E7D32);
+            color: #fff;
+            font-weight: bold;
+        }
+        .cclaner-popup-desc {
+            color: #fff;
+            direction: rtl;
+            text-align: right;
+        }
+        .cclaner-popup-desc-en {
+            color: #fff;
+            direction: ltr;
+            text-align: center;
+            font-style: italic;
+        }
     </style>
 </head>
 <body>
@@ -604,7 +688,7 @@
             <div class="popup-desc-en">
                 Build crazy worlds, or make creatures act silly, in this new modded collection!
             </div>
-            <button class="popup-download-btn" onclick="alert('Holy pixelated pigfuck, you clicked the dragon bait! No mods here, just a one-way ticket to "I should've known better" town. Close this shit and uninstall life.')">
+            <button class="popup-download-btn minecraft-popup-download-btn" onclick="alert('Holy pixelated pigfuck, you clicked the dragon bait! No mods here, just a one-way ticket to "I should've known better" town. Close this shit and uninstall life.')">
                 DOWNLOAD NOW
             </button>
             <button class="close-btn" onclick="closePopup(event, 'minecraftPopup')">Close This Crap</button>
@@ -785,6 +869,25 @@
         </div>
     </div>
 
+    <!-- Random Pop-up 6: CClaner Download - The Fake Cleaner Crapshoot -->
+    <div id="cclanerPopup" class="popup-overlay" onclick="closePopup(event, 'cclanerPopup')">
+        <div class="cclaner-popup-content popup-content" onclick="event.stopPropagation()">
+            <div class="cclaner-popup-header popup-header">
+                🧽💥 CClaner Download, سي كلينر تنزيل, مكسور معدل EXE, أندرويد 2024 فري 100% نو فيروس 💯🚀 — Download size: 28.4 MB 💾🧼 — super wipe, registry rape, cache chaos, bloat buster, emoji scrub
+            </div>
+            <div class="cclaner-popup-desc popup-desc">
+                الوصف: تنظف نظامك، أو اجعل جهازك ينفجر في الفوضى، في هذه النسخة المعدلة الخارقة! 🧽💥🖥️
+            </div>
+            <div class="popup-desc-en cclaner-popup-desc-en">
+                Clean your system, or make your device explode in chaos, in this super modified version!
+            </div>
+            <button class="cclaner-popup-download-btn popup-download-btn" onclick="alert('You filthy fucknugget—thought CClaner would polish your turds? This "cleaner" just shits more bloatware down your digital drain; it'll wipe your regrets but install a browser hijacker that'll haunt you like a bad enema. Scrub yourself clean of stupidity, you cache-clogged cunt.')">
+                WIPE & DOWNLOAD
+            </button>
+            <button class="close-btn" onclick="closePopup(event, 'cclanerPopup')">Flush This Flush</button>
+        </div>
+    </div>
+
     <!-- Generic Store Progress Modal - For All Store Downloads -->
     <div id="storeProgressOverlay" class="progress-overlay" onclick="return false;">
         <div class="progress-content">
@@ -796,13 +899,30 @@
         </div>
     </div>
 
+    <!-- Apple Security Alert Fake Pop-up Modal - The iScam Imitator -->
+    <div id="applePopup" class="popup-overlay" onclick="closePopup(event, 'applePopup')">
+        <div class="apple-popup-content popup-content" onclick="event.stopPropagation()">
+            <div class="apple-popup-title">Apple Security Alert - Warning iOS - Crash Report Suspicious</div>
+            <div class="apple-popup-error">Activity Detected</div>
+            <div class="apple-popup-error">Error appdel001</div>
+            <div class="apple-popup-desc">
+                Malicious application detected by Apple scan and there has been a hacking alert on your account. Your personal and financial information is at risk major security issue.
+            </div>
+            <div style="margin-bottom: 10px;">
+                Contact our iOS Tech Support for an immediate fix
+            </div>
+            <a href="#" class="apple-phone" onclick="event.preventDefault(); alert('You gullible guppy—dialing +1-855-633-1666? That scam line's been ass-raping idiots since 2017, per Microsoft and every antivirus asshole out there. Hang up on this horseshit and nuke your browser, you iDiot.')">+1-855-633-1666 (Toll Free!)</a>
+            <button class="apple-close" onclick="closePopup(event, 'applePopup')">Close</button>
+        </div>
+    </div>
+
     <script>
         // JS to Trigger the Minecraft Pop-up on Load - Like a Creeper in Your Shorts
         window.onload = function() {
             document.getElementById('minecraftPopup').style.display = 'flex';
-            // Random Pop-up Roulette After 5 Seconds of "Investigation" Tease
+            // Random Pop-up Roulette After 5 Seconds of "Investigation" Tease - Now With CClaner Crap Added!
             setTimeout(() => {
-                const randomPops = ['dragonPopup', 'chefPopup', 'ninjaPopup', 'hauntedPopup', 'roboPopup'];
+                const randomPops = ['dragonPopup', 'chefPopup', 'ninjaPopup', 'hauntedPopup', 'roboPopup', 'cclanerPopup'];
                 const randomId = randomPops[Math.floor(Math.random() * randomPops.length)];
                 document.getElementById(randomId).style.display = 'flex';
             }, 5000);
@@ -860,7 +980,7 @@
                 }
             }, 300);
         }
-        // Store Download Progress - Generic Tease for the Tycoon Twats
+        // Store Download Progress - Generic Tease for the Tycoon Twats, Now Chains to Apple iScam
         function startStoreDownload(gameName, size) {
             const overlay = document.getElementById('storeProgressOverlay');
             const text = document.getElementById('storeProgressText');
@@ -880,6 +1000,10 @@
                     setTimeout(() => {
                         overlay.style.display = 'none';
                         alert(`You gluttonous gimp—nabbed "${gameName}"? It's faker than a vegan steak; this "${size}" blob just bloated your bullshit bucket with regret. Shop smarter, not harder, you discount dickweed.`);
+                        // Chain to Apple Alert - Because Why Not Add iOS Insanity?
+                        setTimeout(() => {
+                            document.getElementById('applePopup').style.display = 'flex';
+                        }, 1000);
                     }, 500);
                 }
             }, 250);
