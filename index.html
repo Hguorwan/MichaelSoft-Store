@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MichaelSoftware Store</title>
+    <title>MichaelSoftware EXE and APK Store</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -153,7 +153,7 @@
             content: " 💾🎉";
             margin-left: 5px;
         }
-        /* Pop-up Styles - The Money Shot (unchanged for brevity) */
+        /* Pop-up Styles - The Money Shot */
         .popup-overlay {
             display: none;
             position: fixed;
@@ -233,7 +233,19 @@
             content: " 💾⚡";
             margin-left: 10px;
         }
-        /* [All previous specific pop-up styles omitted for brevity - assume they're here as before] */
+        /* Wolf-Specific Pop-up - Gray and Growly */
+        .wolf-popup-content {
+            background: linear-gradient(145deg, #607D8B, #455A64);
+            color: #fff;
+            border: 2px solid #B0BEC5;
+        }
+        .wolf-popup-header {
+            color: #FFEB3B;
+            font-size: 20px;
+        }
+        .wolf-popup-download-btn {
+            background: linear-gradient(145deg, #9C27B0, #7B1FA2);
+        }
         /* Progress Bar Styles - The Tease Before the Taint */
         .progress-overlay {
             display: none;
@@ -280,10 +292,224 @@
             font-weight: bold;
             color: #4CAF50;
         }
+        /* MrBeast Pop-up - Gold and Greedy AF */
+        .beast-popup-content {
+            background: linear-gradient(145deg, #FFD700, #FFA500);
+            color: #000;
+            border: 3px solid #FF4500;
+        }
+        .beast-popup-header {
+            color: #8B0000;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .beast-popup-download-btn {
+            background: linear-gradient(145deg, #32CD32, #228B22);
+            color: #fff;
+            font-weight: bold;
+        }
+        .beast-popup-desc {
+            color: #000;
+            direction: rtl;
+            text-align: right;
+        }
+        .beast-popup-desc-en {
+            color: #000;
+            direction: ltr;
+            text-align: center;
+            font-style: italic;
+        }
+        /* Zyxwaver Pop-up - Purple Pulse Party */
+        .zyxwaver-popup-content {
+            background: linear-gradient(145deg, #9C27B0, #7B1FA2);
+            color: #fff;
+            border: 2px solid #E1BEE7;
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { box-shadow: 0 0 10px #9C27B0; }
+            50% { box-shadow: 0 0 20px #FF00FF; }
+            100% { box-shadow: 0 0 10px #9C27B0; }
+        }
+        .zyxwaver-popup-header {
+            color: #FFE082;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .zyxwaver-popup-download-btn {
+            background: linear-gradient(145deg, #FF5722, #F44336);
+            color: #fff;
+            font-weight: bold;
+        }
+        .zyxwaver-popup-desc {
+            color: #fff;
+            direction: rtl;
+            text-align: right;
+        }
+        .zyxwaver-popup-desc-en {
+            color: #fff;
+            direction: ltr;
+            text-align: center;
+            font-style: italic;
+        }
+        /* Random Pop-up Styles - The Roulette of Retardation */
+        /* Turbo Dragon Racing - Fiery Red Rage */
+        .dragon-popup-content {
+            background: linear-gradient(145deg, #FF4500, #DC143C);
+            color: #fff;
+            border: 2px solid #FFD700;
+        }
+        .dragon-popup-header {
+            color: #FFD700;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .dragon-popup-download-btn {
+            background: linear-gradient(145deg, #FF8C00, #FF4500);
+            color: #fff;
+            font-weight: bold;
+        }
+        .dragon-popup-desc {
+            color: #fff;
+            direction: rtl;
+            text-align: right;
+        }
+        .dragon-popup-desc-en {
+            color: #fff;
+            direction: ltr;
+            text-align: center;
+            font-style: italic;
+        }
+        /* Galactic Chef Simulator - Cosmic Blue Bullshit */
+        .chef-popup-content {
+            background: linear-gradient(145deg, #4B0082, #000080);
+            color: #fff;
+            border: 2px solid #00BFFF;
+        }
+        .chef-popup-header {
+            color: #00FFFF;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .chef-popup-download-btn {
+            background: linear-gradient(145deg, #FF1493, #8A2BE2);
+            color: #fff;
+            font-weight: bold;
+        }
+        .chef-popup-desc {
+            color: #fff;
+            direction: rtl;
+            text-align: right;
+        }
+        .chef-popup-desc-en {
+            color: #fff;
+            direction: ltr;
+            text-align: center;
+            font-style: italic;
+        }
+        /* Ninja Pixel Warriors - Shadowy Green Slash */
+        .ninja-popup-content {
+            background: linear-gradient(145deg, #006400, #228B22);
+            color: #fff;
+            border: 2px solid #90EE90;
+        }
+        .ninja-popup-header {
+            color: #F0E68C;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .ninja-popup-download-btn {
+            background: linear-gradient(145deg, #000000, #333333);
+            color: #fff;
+            font-weight: bold;
+        }
+        .ninja-popup-desc {
+            color: #fff;
+            direction: rtl;
+            text-align: right;
+        }
+        .ninja-popup-desc-en {
+            color: #fff;
+            direction: ltr;
+            text-align: center;
+            font-style: italic;
+        }
+        /* Haunted Mansion Builder - Ghostly Purple Phantasm */
+        .haunted-popup-content {
+            background: linear-gradient(145deg, #4B0082, #9370DB);
+            color: #fff;
+            border: 2px solid #DDA0DD;
+            animation: haunt 3s infinite alternate;
+        }
+        @keyframes haunt {
+            0% { opacity: 0.8; }
+            100% { opacity: 1; }
+        }
+        .haunted-popup-header {
+            color: #FFF8DC;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .haunted-popup-download-btn {
+            background: linear-gradient(145deg, #8B008B, #4B0082);
+            color: #fff;
+            font-weight: bold;
+        }
+        .haunted-popup-desc {
+            color: #fff;
+            direction: rtl;
+            text-align: right;
+        }
+        .haunted-popup-desc-en {
+            color: #fff;
+            direction: ltr;
+            text-align: center;
+            font-style: italic;
+        }
+        /* Robo Battle Arena - Metallic Gray Mayhem */
+        .robo-popup-content {
+            background: linear-gradient(145deg, #A9A9A9, #696969);
+            color: #fff;
+            border: 2px solid #D3D3D3;
+        }
+        .robo-popup-header {
+            color: #FFA500;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .robo-popup-download-btn {
+            background: linear-gradient(145deg, #FF4500, #FF8C00);
+            color: #fff;
+            font-weight: bold;
+        }
+        .robo-popup-desc {
+            color: #fff;
+            direction: rtl;
+            text-align: right;
+        }
+        .robo-popup-desc-en {
+            color: #fff;
+            direction: ltr;
+            text-align: center;
+            font-style: italic;
+        }
+        /* Minecraft Pop-up - Blocky Green Goo */
+        .minecraft-popup-content {
+            background: linear-gradient(145deg, #4CAF50, #2E7D32);
+            color: #fff;
+            border: 2px solid #8BC34A;
+        }
+        .minecraft-popup-header {
+            color: #FFEB3B;
+            font-size: 20px;
+        }
+        .minecraft-popup-download-btn {
+            background: linear-gradient(145deg, #FF9800, #F57C00);
+        }
     </style>
 </head>
 <body>
-    <h1>MichaelSoftware EXE & APK Store</h1>
+    <h1>MichaelSoftware EXE and APK Store</h1>
     <div class="header">
         🏀🔥 Basketball Run, بَسْكِتبول رن, مكسور معدل APK, أندرويد 2019 فري 100% نو فيروس 💯🚀 Swedish welfare system cryptocurrency NFT — Download size: 12.9 MB 💾🔥 — nuclear bomb, BBC News approved
     </div>
@@ -302,7 +528,7 @@
 
     <!-- MichaelSoftware Store Section - The Shitty Shelf of Scams -->
     <div class="store-section">
-        <h2 class="store-title">🛒 MichaelSoftware Store - Free Modded Mayhem! 💯🚀</h2>
+        <h2 class="store-title">🛒 MichaelSoftware EXE and APK Store - Free Modded Mayhem! 💯🚀</h2>
         <div class="games-grid">
             <!-- Quantum Pizza Tycoon Card -->
             <div class="game-card">
@@ -360,13 +586,204 @@
                     Fight with machines, or make your robots collapse, in this destructive battle!
                 </div>
                 <button class="store-download-btn" onclick="startStoreDownload('Robo Battle Arena', '95.6 MB')">
-                BATTLE THE BOTS
+                    BATTLE THE BOTS
                 </button>
             </div>
         </div>
     </div>
 
-    <!-- [All previous pop-up modals and progress overlays omitted for brevity - assume they're here as before, including Minecraft, Wolf, Beast, Zyxwaver, and randoms] -->
+    <!-- Minecraft Fake Pop-up Modal - The Original Blockhead -->
+    <div id="minecraftPopup" class="popup-overlay" onclick="closePopup(event, 'minecraftPopup')">
+        <div class="minecraft-popup-content popup-content" onclick="event.stopPropagation()">
+            <div class="popup-header">
+                ⛏️🔥 Minecraft Mods 2022, ماينكرافت مودز 2022, مكسور معدل APK, أندرويد فري 100% نو فيروس 💯🚀 — Download size: 120.5 MB 💾💥 — server ready, dragon mode, Roblox approved, mega blocks, pixel chaos
+            </div>
+            <div class="popup-desc">
+                الوصف: ابنِ عوالم مجنونة، أو اجعل المخلوقات تتصرف بطريقة سخيفة، في هذه المجموعة المعدلة الجديدة! 🏰🦖💣
+            </div>
+            <div class="popup-desc-en">
+                Build crazy worlds, or make creatures act silly, in this new modded collection!
+            </div>
+            <button class="popup-download-btn" onclick="alert('Holy pixelated pigfuck, you clicked the dragon bait! No mods here, just a one-way ticket to "I should've known better" town. Close this shit and uninstall life.')">
+                DOWNLOAD NOW
+            </button>
+            <button class="close-btn" onclick="closePopup(event, 'minecraftPopup')">Close This Crap</button>
+        </div>
+    </div>
+
+    <!-- Wolf Antivirus Fake Pop-up Modal - The Furry Firewall Fiasco -->
+    <div id="wolfPopup" class="popup-overlay" onclick="closePopup(event, 'wolfPopup')">
+        <div class="wolf-popup-content popup-content" onclick="event.stopPropagation()">
+            <div class="wolf-popup-header popup-header">
+                🛡️🐺 Wolf Antivirus, وولف أنتي فايروس, مكسور معدل APK, أندرويد 2022 فري 100% نو فيروس 💯🚀 — Download size: 32.7 MB 💾⚡ — hacker safe, ultimate protection, CNN approved, firewall maxed, stealth mode
+            </div>
+            <div class="popup-desc">
+                الوصف: احمِ جهازك، أو شاهد أعدائك ينهارون، في هذا البرنامج الخارق الجديد! 🐺💻💣
+            </div>
+            <div class="popup-desc-en">
+                Protect your device, or watch your enemies crumble, in this new super program!
+            </div>
+            <button class="wolf-popup-download-btn popup-download-btn" onclick="alert('You dumbass dawg—clicked the wolf trap? This "antivirus" is deader than disco; it'll "protect" you right into a ransomware rimjob. Howl at the moon and delete your browser history, mutt.')">
+                INSTALL WOLF SHIELD
+            </button>
+            <button class="close-btn" onclick="closePopup(event, 'wolfPopup')">Bite Me Later</button>
+        </div>
+    </div>
+
+    <!-- Download Progress Modal - The Slow-Burn Scam Tease -->
+    <div id="progressOverlay" class="progress-overlay" onclick="return false;">
+        <div class="progress-content">
+            <div class="progress-text">Downloading Basketball Run... No viruses, promise! 💯</div>
+            <div class="progress-bar">
+                <div id="progressFill" class="progress-fill"></div>
+            </div>
+            <div class="progress-percent" id="progressPercent">0%</div>
+        </div>
+    </div>
+
+    <!-- MrBeast Money Simulator Fake Pop-up Modal - The Cash-Clutching Clown Car -->
+    <div id="beastPopup" class="popup-overlay" onclick="closePopup(event, 'beastPopup')">
+        <div class="beast-popup-content popup-content" onclick="event.stopPropagation()">
+            <div class="beast-popup-header popup-header">
+                🏦💰 MrBeast Money Simulator, مستر بيست محاكاة المال, مكسور معدل APK, أندرويد 2023 فري 100% نو فيروس 💯🚀 — Download size: 45.2 MB 💾🔥 — money rain, exploding cash, TikTok approved, jackpot unlocked, server ready
+            </div>
+            <div class="beast-popup-desc popup-desc">
+                الوصف: اكسب ملايين، أو اجعل فريقك يخسر الملايين، في هذه اللعبة الجديدة المجنونة! 🤑💥🏦
+            </div>
+            <div class="popup-desc-en beast-popup-desc-en">
+                Earn millions, or make your team lose millions, in this new crazy game!
+            </div>
+            <button class="beast-popup-download-btn popup-download-btn" onclick="startBeastProgress()">
+                UNLOCK JACKPOT
+            </button>
+            <button class="close-btn" onclick="closePopup(event, 'beastPopup')">I'm Broke, Close It</button>
+        </div>
+    </div>
+
+    <!-- Beast Progress Modal - The Greed Grind -->
+    <div id="beastProgressOverlay" class="progress-overlay" onclick="return false;">
+        <div class="progress-content">
+            <div class="progress-text">Unlocking Jackpot... Millions incoming, suckers! 🤑</div>
+            <div class="progress-bar">
+                <div id="beastProgressFill" class="progress-fill"></div>
+            </div>
+            <div class="progress-percent" id="beastProgressPercent">0%</div>
+        </div>
+    </div>
+
+    <!-- Zyxwaver Audio Utilities Fake Pop-up Modal - The Beat-Busting Bitchslap -->
+    <div id="zyxwaverPopup" class="popup-overlay" onclick="closePopup(event, 'zyxwaverPopup')">
+        <div class="zyxwaver-popup-content popup-content" onclick="event.stopPropagation()">
+            <div class="zyxwaver-popup-header popup-header">
+                🎵🔥 Zyxwaver (Audacity) Utilities by Raquel, زايكسوافر (أوداسيتي) أدوات بواسطة راكيل, مكسور معدل EXE, أندرويد 2021 فري 100% نو فيروس 💯🚀 — Download size: 55.8 MB 💾🎧 — super cracked, audio master, DJ mode, remix ready, insane beats
+            </div>
+            <div class="zyxwaver-popup-desc popup-desc">
+                الوصف: شغل المقطوعات، أو عدّل الصوت حتى يجن جنون فريقك، في هذه النسخة المعدلة الخارقة! 🎛️🎶💣
+            </div>
+            <div class="popup-desc-en zyxwaver-popup-desc-en">
+                Play the clips, or edit the sound until your team goes crazy, in this super modified version!
+            </div>
+            <button class="zyxwaver-popup-download-btn popup-download-btn" onclick="alert('You tone-deaf twat—thought Raquel was dropping beats? This "utility" remixes your regrets into a feedback loop of failure; it'll crack your speakers before your sanity. Drop the mic and drop dead, DJ Dickhead.')">
+                REMIX & DOWNLOAD
+            </button>
+            <button class="close-btn" onclick="closePopup(event, 'zyxwaverPopup')">Mute This Madness</button>
+        </div>
+    </div>
+
+    <!-- Random Pop-up 1: Turbo Dragon Racing -->
+    <div id="dragonPopup" class="popup-overlay" onclick="closePopup(event, 'dragonPopup')">
+        <div class="dragon-popup-content popup-content" onclick="event.stopPropagation()">
+            <div class="dragon-popup-header popup-header">
+                🐉🔥 Turbo Dragon Racing, توربو دراجون ريسينغ, مكسور معدل APK, أندرويد 2023 فري 100% نو فيروس 💯🚀 — Download size: 78.2 MB 💾⚡ — fire mode, speed hack, dragon boost, leaderboard maxed, emoji madness
+            </div>
+            <div class="dragon-popup-desc popup-desc">
+                الوصف: اركض مع التنانين، أو اجعل منافسيك يحترقون، في هذه السباقات الخارقة! 🐉🏎️💣
+            </div>
+            <div class="popup-desc-en dragon-popup-desc-en">
+                Race with dragons, or make your rivals burn, in these super races!
+            </div>
+            <button class="dragon-popup-download-btn popup-download-btn" onclick="alert('You fire-breathing fucknugget—thought dragons were dropping boosts? This "racing" hack just flames your firewall; speed off a cliff into scam hell, you scaled shithead.')">
+                BOOST & DOWNLOAD
+            </button>
+            <button class="close-btn" onclick="closePopup(event, 'dragonPopup')">Crash This Dragon</button>
+        </div>
+    </div>
+
+    <!-- Random Pop-up 2: Galactic Chef Simulator -->
+    <div id="chefPopup" class="popup-overlay" onclick="closePopup(event, 'chefPopup')">
+        <div class="chef-popup-content popup-content" onclick="event.stopPropagation()">
+            <div class="chef-popup-header popup-header">
+                🍳🚀 Galactic Chef Simulator, محاكاة الطباخ المجري, مكسور معدل APK, أندرويد 2022 فري 100% نو فيروس 💯🔥 — Download size: 64.5 MB 💾🍔 — space kitchen, zero gravity, alien recipes, chef mode, cooking chaos
+            </div>
+            <div class="chef-popup-desc popup-desc">
+                الوصف: اطبخ أطباق فضائية، أو اجعل فريقك يتقيأ من الطعم، في هذه المحاكاة المجنونة! 👩‍🍳🛸💥
+            </div>
+            <div class="popup-desc-en chef-popup-desc-en">
+                Cook space dishes, or make your team puke from the taste, in this crazy simulation!
+            </div>
+            <button class="chef-popup-download-btn popup-download-btn" onclick="alert('You zero-G glutton—chef's kiss my ass! This "simulator" serves up malware soufflé that'll make your phone hurl; float away puking pixels, space barf-bag.')">
+                COOK & DOWNLOAD
+            </button>
+            <button class="close-btn" onclick="closePopup(event, 'chefPopup')">Spit It Out</button>
+        </div>
+    </div>
+
+    <!-- Random Pop-up 3: Ninja Pixel Warriors -->
+    <div id="ninjaPopup" class="popup-overlay" onclick="closePopup(event, 'ninjaPopup')">
+        <div class="ninja-popup-content popup-content" onclick="event.stopPropagation()">
+            <div class="ninja-popup-header popup-header">
+                🥷🎮 Ninja Pixel Warriors, محاربو النينجا بيكسل, مكسور معدل APK, أندرويد 2021 فري 100% نو فيروس 💯🚀 — Download size: 88.9 MB 💾🔥 — stealth attack, pixel slash, ultimate combo, boss fight, emoji storm
+            </div>
+            <div class="ninja-popup-desc popup-desc">
+                الوصف: قاتل الظلال، أو اجعل فريقك ينهار تحت ضربات البيكسل، في هذه اللعبة المدهشة! 🗡️🖤💣
+            </div>
+            <div class="popup-desc-en ninja-popup-desc-en">
+                Fight the shadows, or make your team collapse under pixel strikes, in this amazing game!
+            </div>
+            <button class="ninja-popup-download-btn popup-download-btn" onclick="alert('You pixelated pussy—ninja stealth? More like sneak-attack spyware! This "warrior" slashes your security; shuriken yourself in the nuts, shadow-dicking shogun.')">
+                SLASH & DOWNLOAD
+            </button>
+            <button class="close-btn" onclick="closePopup(event, 'ninjaPopup')">Vanish, Ninja</button>
+        </div>
+    </div>
+
+    <!-- Random Pop-up 4: Haunted Mansion Builder -->
+    <div id="hauntedPopup" class="popup-overlay" onclick="closePopup(event, 'hauntedPopup')">
+        <div class="haunted-popup-content popup-content" onclick="event.stopPropagation()">
+            <div class="haunted-popup-header popup-header">
+                🏚️👻 Haunted Mansion Builder, بناء القصر المسكون, مكسور معدل APK, أندرويد فري 100% نو فيروس 💯💥 — Download size: 101.3 MB 💾🎃 — ghost mode, trap rooms, scare boost, mansion chaos, paranormal fun
+            </div>
+            <div class="haunted-popup-desc popup-desc">
+                الوصف: ابنِ قصر مرعب، أو اجعل الأشباح تتحكم بفريقك، في هذه النسخة المعدلة المجنونة! 👻🏰💣
+            </div>
+            <div class="popup-desc-en haunted-popup-desc-en">
+                Build a scary mansion, or let ghosts control your team, in this modded crazy version!
+            </div>
+            <button class="haunted-popup-download-btn popup-download-btn" onclick="alert('You boo-hooing builder—haunted? Yeah, by hackers! This "mansion" traps your data in ghost chains; poltergeist your phone to hell, you spectral shit-stirrer.')">
+                HAUNT & DOWNLOAD
+            </button>
+            <button class="close-btn" onclick="closePopup(event, 'hauntedPopup')">Exorcise This</button>
+        </div>
+    </div>
+
+    <!-- Random Pop-up 5: Robo Battle Arena -->
+    <div id="roboPopup" class="popup-overlay" onclick="closePopup(event, 'roboPopup')">
+        <div class="robo-popup-content popup-content" onclick="event.stopPropagation()">
+            <div class="robo-popup-header popup-header">
+                🤖⚡ Robo Battle Arena, ساحة روبو باتل, مكسور معدل APK, أندرويد 2023 فري 100% نو فيروس 💯🚀 — Download size: 95.6 MB 💾💥 — mech upgrade, laser mode, ultimate arena, robot chaos, emoji explosion
+            </div>
+            <div class="robo-popup-desc popup-desc">
+                الوصف: قاتل بالآليين، أو اجعل روبوتاتك تنهار، في هذه المعركة المدمرة! 🤖🔥💥
+            </div>
+            <div class="popup-desc-en robo-popup-desc-en">
+                Fight with machines, or make your robots collapse, in this destructive battle!
+            </div>
+            <button class="robo-popup-download-btn popup-download-btn" onclick="alert('You circuit-fried cocksucker—robo battle? More like botnet brawl! This "arena" upgrades your doom with laser-laced lies; short-circuit your sorry ass, tin-can twat.')">
+                BATTLE & DOWNLOAD
+            </button>
+            <button class="close-btn" onclick="closePopup(event, 'roboPopup')">Scrap This Bot</button>
+        </div>
+    </div>
 
     <!-- Generic Store Progress Modal - For All Store Downloads -->
     <div id="storeProgressOverlay" class="progress-overlay" onclick="return false;">
@@ -380,8 +797,69 @@
     </div>
 
     <script>
-        // [All previous JS functions omitted for brevity - onload for Minecraft + random, closePopup, showWolf, startDownloadProgress, startBeastProgress] 
-
+        // JS to Trigger the Minecraft Pop-up on Load - Like a Creeper in Your Shorts
+        window.onload = function() {
+            document.getElementById('minecraftPopup').style.display = 'flex';
+            // Random Pop-up Roulette After 5 Seconds of "Investigation" Tease
+            setTimeout(() => {
+                const randomPops = ['dragonPopup', 'chefPopup', 'ninjaPopup', 'hauntedPopup', 'roboPopup'];
+                const randomId = randomPops[Math.floor(Math.random() * randomPops.length)];
+                document.getElementById(randomId).style.display = 'flex';
+            }, 5000);
+        };
+        function closePopup(event, popupId) {
+            if (event) event.stopPropagation();
+            document.getElementById(popupId).style.display = 'none';
+        }
+        function showWolfPopup() {
+            // Close Minecraft if it's open, then unleash the wolf
+            if (document.getElementById('minecraftPopup').style.display === 'flex') {
+                closePopup(null, 'minecraftPopup');
+            }
+            document.getElementById('wolfPopup').style.display = 'flex';
+        }
+        // Download Progress Shenanigans - Fake It Till You Break It
+        function startDownloadProgress() {
+            const overlay = document.getElementById('progressOverlay');
+            const fill = document.getElementById('progressFill');
+            const percent = document.getElementById('progressPercent');
+            overlay.style.display = 'flex';
+            let progress = 0;
+            const interval = setInterval(() => {
+                progress += Math.random() * 10; // Janky progress for realism
+                if (progress > 100) progress = 100;
+                fill.style.width = progress + '%';
+                percent.textContent = Math.floor(progress) + '%';
+                if (progress >= 100) {
+                    clearInterval(interval);
+                    setTimeout(() => {
+                        overlay.style.display = 'none';
+                        document.getElementById('beastPopup').style.display = 'flex'; // Surprise! MrBeast Bitchslap
+                    }, 500);
+                }
+            }, 200);
+        }
+        // Beast Progress - Even Slower, 'Cause Greed Takes Time
+        function startBeastProgress() {
+            const overlay = document.getElementById('beastProgressOverlay');
+            const fill = document.getElementById('beastProgressFill');
+            const percent = document.getElementById('beastProgressPercent');
+            overlay.style.display = 'flex';
+            let progress = 0;
+            const interval = setInterval(() => {
+                progress += Math.random() * 5; // Slower tease for the cash whores
+                if (progress > 100) progress = 100;
+                fill.style.width = progress + '%';
+                percent.textContent = Math.floor(progress) + '%';
+                if (progress >= 100) {
+                    clearInterval(interval);
+                    setTimeout(() => {
+                        overlay.style.display = 'none';
+                        document.getElementById('zyxwaverPopup').style.display = 'flex'; // Drop the bass on their ass!
+                    }, 500);
+                }
+            }, 300);
+        }
         // Store Download Progress - Generic Tease for the Tycoon Twats
         function startStoreDownload(gameName, size) {
             const overlay = document.getElementById('storeProgressOverlay');
