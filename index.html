@@ -1,296 +1,247 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The MichaelSoftware EXE & APK Store</title>
+<title>MichaelSoftware EXE & APK Store</title>
 <style>
-body { font-family: Arial, sans-serif; background:#121212; color:#eee; margin:0; padding:0; }
-h1, h2 { text-align:center; margin:10px; }
-.grid-container { display:grid; grid-template-columns: repeat(auto-fit,minmax(300px,1fr)); gap:15px; padding:15px; }
-.game-card { background:#1e1e1e; padding:15px; border-radius:10px; position:relative; box-shadow:0 0 10px #000; cursor:pointer; }
-.game-title { font-weight:bold; font-size:1.2em; margin-bottom:5px; }
-.game-desc { font-size:0.9em; margin-bottom:10px; }
-.download-btn { margin:5px; padding:10px; border:none; border-radius:5px; cursor:pointer; background:#ff6f61; color:#fff; }
-.download-btn:hover { background:#ff3b2e; }
-.popup, .subtle-popup { position:fixed; padding:15px; background:#222; color:#fff; border-radius:8px; box-shadow:0 0 15px #000; display:none; z-index:1000; }
-.popup { top:50%; left:50%; transform:translate(-50%,-50%); width:80%; max-width:500px; }
-.subtle-popup { top:10px; right:10px; width:250px; }
-.popup-header { font-weight:bold; font-size:1.1em; margin-bottom:5px; }
-.popup-desc, .popup-desc-en { font-size:0.9em; margin-bottom:10px; }
-.close-btn { padding:8px 12px; margin-right:5px; background:#555; color:#fff; border:none; border-radius:5px; cursor:pointer; }
-.close-btn:hover { background:#888; }
-.popup-download-btn { padding:10px 15px; background:#ff6f61; color:#fff; border:none; border-radius:5px; cursor:pointer; }
-.popup-download-btn:hover { background:#ff3b2e; }
+body {
+  background: #dcdcdc;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.header {
+  background: #2b2b2b;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  font-size: 28px;
+}
+.subhead {
+  background: #444;
+  color: #eee;
+  padding: 8px;
+  text-align: center;
+  font-size: 16px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 15px;
+  padding: 20px;
+}
+.game-card {
+  background: white;
+  border: 3px solid #000;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 4px 4px 0px #555;
+}
+.game-card h2 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+.game-desc {
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+.download-btn {
+  background: #0080ff;
+  border: 2px solid #000;
+  padding: 8px;
+  color: white;
+  cursor: pointer;
+  margin: 4px;
+}
+.download-btn:hover {
+  background: #005fcc;
+}
 </style>
 </head>
 <body>
 
-<h1>The MichaelSoftware EXE & APK Store</h1>
-<h2>MichaelSoft/MichaelSoftware Store</h2>
-
-<!-- Random broken English + Arabic + Hindi lines sprinkled -->
-<p style="text-align:center; font-size:14px;">مرحبا दोस्त, welcome to zee madness! यहाँ कुछ crazy stuffs for you 💣💥</p>
+<div class="header">MichaelSoftware EXE & APK Store</div>
+<div class="subhead">The MichaelSoftware Executable & Android Package Download Grid</div>
 
 <div class="grid">
-  <!-- Example Game Card -->
-  <div class="game-card">
-    <h3>Basketball Run Cracked Modded APK 🏀🔥</h3>
-    <p>💾 Size: 52.1 MB | Turbo hoops, emoji chaos, slam dunk!</p>
-    <button class="download-btn" onclick="showPopup('popup1')">Download</button>
-  </div>
 
-<!-- Game 2: MrBeast Money Simulator -->
+<!-- 1: CKlaner -->
 <div class="game-card">
-  <h2>💰🤑 MrBeast Money Simulator</h2>
-  <p class="game-desc">पैसों का खेल खेलो, या अपने दोस्तों के खाते उड़ाओ، في هذه المحاكاة المجنونة! 💰💥🤑</p>
+  <h2>⚠️ CKlaner</h2>
+  <p class="game-desc">A chaotic utility with unstable energies. Use at your own risk.</p>
+  <button class="download-btn" onclick="alert('Downloading CKlaner.EXE…')">Download EXE</button>
+  <button class="download-btn" onclick="alert('CKlaner APKs are discontinued.')">Download APK</button>
+</div>
+
+<!-- 2 to 25 below -->
+
+<div class="game-card">
+  <h2>MrBeast Money Simulator</h2>
+  <p class="game-desc">A ridiculous cash-harvesting parody game with infinite chaos.</p>
   <button class="download-btn" onclick="alert('Downloading EXE…')">Download EXE</button>
   <button class="download-btn" onclick="alert('Downloading APK…')">Download APK</button>
 </div>
 
-<!-- Game 3: Wolf Antivirus -->
 <div class="game-card">
-  <h2>🐺🛡️ Wolf Antivirus</h2>
-  <p class="game-desc">वायरस को स्कैन करो, या अपने कंप्यूटर को बचाओ، في هذه الأداة المجنونة! 🐺💥🛡️</p>
+  <h2>Wolf Antivirus</h2>
+  <p class="game-desc">Defend your system with a wolf-themed pseudo-antivirus.</p>
   <button class="download-btn" onclick="alert('Downloading EXE…')">Download EXE</button>
   <button class="download-btn" onclick="alert('Downloading APK…')">Download APK</button>
 </div>
 
-<!-- Game 4: Minecraft Mods 2022 -->
 <div class="game-card">
-  <h2>⛏️🪄 Minecraft Mods 2022</h2>
-  <p class="game-desc">खदान करो, या अपने दोस्तों के दुनिया में मस्ती करो، في هذه التعديلات المجنونة! ⛏️💥🪄</p>
+  <h2>Minecraft Mods 2022</h2>
+  <p class="game-desc">An ancient relic containing mods nobody asked for.</p>
   <button class="download-btn" onclick="alert('Downloading EXE…')">Download EXE</button>
   <button class="download-btn" onclick="alert('Downloading APK…')">Download APK</button>
 </div>
 
-<!-- Game 5: Zyxwaver (Audacity) Utilities by Raquel -->
 <div class="game-card">
-  <h2>🎧🔊 Zyxwaver</h2>
-  <p class="game-desc">ऑडियो को मॉड करो, या अपने संगीत को बदलो، في هذه الأداة الصوتية المجنونة! 🎧💥🔊</p>
+  <h2>Zyxwaver Utilities</h2>
+  <p class="game-desc">Audio manipulation utilities allegedly made by Raquel.</p>
   <button class="download-btn" onclick="alert('Downloading EXE…')">Download EXE</button>
   <button class="download-btn" onclick="alert('Downloading APK…')">Download APK</button>
 </div>
 
-<!-- Game 6: Quantum Pizza Tycoon -->
 <div class="game-card">
-  <h2>🍕⚡ Quantum Pizza Tycoon</h2>
-  <p class="game-desc">पिज़्ज़ा बनाओ, या अपने कर्मचारियों को उड़ाओ، في هذه المحاكاة المجنونة! 🍕💥⚡</p>
+  <h2>Quantum Pizza Tycoon</h2>
+  <p class="game-desc">Run a pizza empire that ignores normal physics entirely.</p>
   <button class="download-btn" onclick="alert('Downloading EXE…')">Download EXE</button>
   <button class="download-btn" onclick="alert('Downloading APK…')">Download APK</button>
 </div>
 
-<!-- Game 7: Steal Cathc the Brianrots IV -->
 <div class="game-card">
-  <h2>🌀💣 Steal Cathc the Brianrots IV</h2>
-  <p class="game-desc">चोरी करो, या अपने दोस्तों को परेशान करो، في هذه اللعبة المجنونة! 🌀💥💣</p>
+  <h2>Steal Cathc the Brianrots IV</h2>
+  <p class="game-desc">A sequel nobody saw coming. Or wanted. But it exists.</p>
   <button class="download-btn" onclick="alert('Downloading EXE…')">Download EXE</button>
   <button class="download-btn" onclick="alert('Downloading APK…')">Download APK</button>
 </div>
 
-<!-- Game 8: Haunted House Builder -->
 <div class="game-card">
-  <h2>🏚️👻 Haunted House Builder</h2>
-  <p class="game-desc">भूतिया घर बनाओ, या अपने दोस्तों को डराओ، في هذه اللعبة المخيفة المجنونة! 🏚️💥👻</p>
+  <h2>Haunted House Builder</h2>
+  <p class="game-desc">Construct doomed real estate filled with questionable ghosts.</p>
   <button class="download-btn" onclick="alert('Downloading EXE…')">Download EXE</button>
   <button class="download-btn" onclick="alert('Downloading APK…')">Download APK</button>
 </div>
 
-<!-- Game 9: ChatGPT Chaos Mixer -->
 <div class="game-card">
-  <h2>🤯💻 ChatGPT Chaos Mixer</h2>
-  <p class="game-desc">एआई को पागल बनाओ, या अपने दोस्तों को उलझाओ، في هذه الأداة المجنونة! 🤯💥💻</p>
+  <h2>ChatGPT Chaos Mixer</h2>
+  <p class="game-desc">Scrambles text, brains, and occasionally the OS.</p>
   <button class="download-btn" onclick="alert('Downloading EXE…')">Download EXE</button>
   <button class="download-btn" onclick="alert('Downloading APK…')">Download APK</button>
 </div>
 
-<!-- Game 10: Turbo Dragon -->
 <div class="game-card">
-  <h2>🐉⚡ Turbo Dragon</h2>
-  <p class="game-desc">ड्रैगन उड़ाओ, या अपने विरोधियों को जलाओ، في هذه اللعبة المجنونة! 🐉💥⚡</p>
+  <h2>Turbo Dragon</h2>
+  <p class="game-desc">Fly, burn things, win absolutely nothing meaningful.</p>
   <button class="download-btn" onclick="alert('Downloading EXE…')">Download EXE</button>
   <button class="download-btn" onclick="alert('Downloading APK…')">Download APK</button>
 </div>
 
-<!-- Game 11: Galactic -->
 <div class="game-card">
-  <h2>🌌🚀 Galactic</h2>
-  <p class="game-desc">आकाशगंगा में दौड़ो, या अपने दोस्तों को उल्टा कर दो، في هذه اللعبة الفضائية المجنونة! 🌌💥🚀</p>
+  <h2>Galactic</h2>
+  <p class="game-desc">A space racer with more glitches than stars.</p>
   <button class="download-btn" onclick="alert('Downloading EXE…')">Download EXE</button>
   <button class="download-btn" onclick="alert('Downloading APK…')">Download APK</button>
 </div>
 
-<!-- Game 12: Chef -->
 <div class="game-card">
-  <h2>👨‍🍳🔥 Chef</h2>
-  <p class="game-desc">खाना बनाओ, या अपने कर्मचारियों को उड़ाओ، في هذه اللعبة المجنونة! 👨‍🍳💥🔥</p>
+  <h2>Chef</h2>
+  <p class="game-desc">Cook meals or set your kitchen on fire. There is no in-between.</p>
   <button class="download-btn" onclick="alert('Downloading EXE…')">Download EXE</button>
   <button class="download-btn" onclick="alert('Downloading APK…')">Download APK</button>
 </div>
 
-<!-- Game 13: Ninja Pixel Warriors -->
 <div class="game-card">
-  <h2>🥷🟦 Ninja Pixel Warriors</h2>
-  <p class="game-desc">निंजा बनो, या अपने दोस्तों को हराओ، في هذه اللعبة المجنونة! 🥷💥🟦</p>
+  <h2>Ninja Pixel Warriors</h2>
+  <p class="game-desc">Jump, slash, lag, repeat.</p>
   <button class="download-btn" onclick="alert('Downloading EXE…')">Download EXE</button>
   <button class="download-btn" onclick="alert('Downloading APK…')">Download APK</button>
 </div>
 
-<!-- Game 14: Zombie Disco Party -->
 <div class="game-card">
-  <h2>🧟‍♂️💃 Zombie Disco Party</h2>
-  <p class="game-desc">ارقص مع الزومبي, या घर के भूतों को डराओ, أو اجعل فريقك يركض بلا عقول في هذه الحفلة المجنونة! 🧟‍♂️🕺💥</p>
+  <h2>Zombie Disco Party</h2>
+  <p class="game-desc">Dance with the undead. No refunds if bitten.</p>
   <button class="download-btn" onclick="alert('Downloading EXE…')">Download EXE</button>
   <button class="download-btn" onclick="alert('Downloading APK…')">Download APK</button>
 </div>
 
-<!-- Game 15: Turbo Hamster Kart -->
 <div class="game-card">
-  <h2>🐹🏎️ Turbo Hamster Kart</h2>
-  <p class="game-desc">कूदो कैंगारू, या अपने प्रतिद्वंद्वियों को हवा में उड़ाओ, في هذه السباقات المجنونة! 🐹💨💣</p>
+  <h2>Turbo Hamster Kart</h2>
+  <p class="game-desc">High-speed rodent-based vehicular chaos.</p>
   <button class="download-btn" onclick="alert('Downloading EXE…')">Download EXE</button>
   <button class="download-btn" onclick="alert('Downloading APK…')">Download APK</button>
 </div>
 
-<!-- Game 16: Alien Bubble Pop -->
 <div class="game-card">
-  <h2>👽🫧 Alien Bubble Pop</h2>
-  <p class="game-desc">فرقع الفقاعات الفضائية, या उन्हें अपने दोस्तों पर गिराओ, في هذه اللعبة المجنونة! 👽🫧💣</p>
+  <h2>Alien Bubble Pop</h2>
+  <p class="game-desc">Pop alien bubbles. They sometimes pop back.</p>
   <button class="download-btn" onclick="alert('Downloading EXE…')">Download EXE</button>
   <button class="download-btn" onclick="alert('Downloading APK…')">Download APK</button>
 </div>
 
-<!-- Game 17: Cyber Sushi Chef -->
 <div class="game-card">
-  <h2>🍣🤖 Cyber Sushi Chef</h2>
-  <p class="game-desc">حضّر سوشي سيبراني, या अपने कर्मचारियों को उड़ाओ, في هذه اللعبة المجنونة! 🍣💥🤖</p>
+  <h2>Cyber Sushi Chef</h2>
+  <p class="game-desc">Make sushi with cybernetic seafood.</p>
   <button class="download-btn" onclick="alert('Downloading EXE…')">Download EXE</button>
   <button class="download-btn" onclick="alert('Downloading APK…')">Download APK</button>
 </div>
 
-<!-- Game 18: Cosmic Llama Jump -->
 <div class="game-card">
-  <h2>🦙🌌 Cosmic Llama Jump</h2>
-  <p class="game-desc">उछलो लैमा, या अपने दोस्तों को उल्टा कर दो, في هذه اللعبة المجنونة! 🦙💥🌌</p>
+  <h2>Cosmic Llama Jump</h2>
+  <p class="game-desc">Jump through space using a llama whose physics break hourly.</p>
   <button class="download-btn" onclick="alert('Downloading EXE…')">Download EXE</button>
   <button class="download-btn" onclick="alert('Downloading APK…')">Download APK</button>
 </div>
 
-<!-- Game 19: Turbo Kangaroo Kart -->
 <div class="game-card">
-  <h2>🦘🏎️ Turbo Kangaroo Kart</h2>
-  <p class="game-desc">कूदो कैंगारू, या अपने प्रतिद्वंद्वियों को हवा में उड़ाओ, في هذه السباقات المجنونة! 🦘💨💣</p>
+  <h2>Turbo Kangaroo Kart</h2>
+  <p class="game-desc">Race at dangerous speeds with a kangaroo pilot.</p>
   <button class="download-btn" onclick="alert('Downloading EXE…')">Download EXE</button>
   <button class="download-btn" onclick="alert('Downloading APK…')">Download APK</button>
 </div>
 
-<!-- Game 20: Lava Llama Racing -->
 <div class="game-card">
-  <h2>🦙🔥 Lava Llama Racing</h2>
-  <p class="game-desc">उछलो लामा, या अपने दोस्तों को जला दो, في هذه السباقات المجنونة! 🦙💥🔥</p>
+  <h2>Lava Llama Racing</h2>
+  <p class="game-desc">Race glowing llamas through volcanic ruins.</p>
   <button class="download-btn" onclick="alert('Downloading EXE…')">Download EXE</button>
   <button class="download-btn" onclick="alert('Downloading APK…')">Download APK</button>
 </div>
 
-<!-- Game 21: Cosmic Cactus Clash -->
 <div class="game-card">
-  <h2>🌵⚡ Cosmic Cactus Clash</h2>
-  <p class="game-desc">काक्टस को उड़ाओ, या अपने विरोधियों को चुभो, في هذه اللعبة المجنونة! 🌵💥⚡</p>
+  <h2>Cosmic Cactus Clash</h2>
+  <p class="game-desc">Battle alien cacti in low gravity.</p>
   <button class="download-btn" onclick="alert('Downloading EXE…')">Download EXE</button>
   <button class="download-btn" onclick="alert('Downloading APK…')">Download APK</button>
 </div>
 
-<!-- Game 22: Robo Rhino Rampage -->
 <div class="game-card">
-  <h2>🦏💥 Robo Rhino Rampage</h2>
-  <p class="game-desc">राइनो को रोबोट बनाओ, या अपने दुश्मनों को गिराओ، في هذه اللعبة المجنونة! 🦏💥⚡</p>
+  <h2>Robo Rhino Rampage</h2>
+  <p class="game-desc">A robot rhino simulator with questionable stability.</p>
   <button class="download-btn" onclick="alert('Downloading EXE…')">Download EXE</button>
   <button class="download-btn" onclick="alert('Downloading APK…')">Download APK</button>
 </div>
 
-<!-- Game 23: Phantom Fox Fiesta -->
 <div class="game-card">
-  <h2>🦊🎉 Phantom Fox Fiesta</h2>
-  <p class="game-desc">भूतिया लोमड़ी के साथ खेलो, या अपने दोस्तों को परेशान करो، في هذه اللعبة المجنونة! 🦊💥🎉</p>
+  <h2>Phantom Fox Fiesta</h2>
+  <p class="game-desc">A ghost-fox party game no one fully understands.</p>
   <button class="download-btn" onclick="alert('Downloading EXE…')">Download EXE</button>
   <button class="download-btn" onclick="alert('Downloading APK…')">Download APK</button>
 </div>
 
-<!-- Game 24: Turbo Turtle Tussle -->
 <div class="game-card">
-  <h2>🐢⚡ Turbo Turtle Tussle</h2>
-  <p class="game-desc">तेज़ कछुए के साथ दौड़ो, या अपने प्रतिद्वंद्वियों को पीछे छोड़ दो، في هذه اللعبة المجنونة! 🐢💥⚡</p>
+  <h2>Turbo Turtle Tussle</h2>
+  <p class="game-desc">Turtles fighting at alarming speeds.</p>
   <button class="download-btn" onclick="alert('Downloading EXE…')">Download EXE</button>
   <button class="download-btn" onclick="alert('Downloading APK…')">Download APK</button>
 </div>
 
-<!-- Game 25: Neon Octopus Odyssey -->
 <div class="game-card">
-  <h2>🐙🌌 Neon Octopus Odyssey</h2>
-  <p class="game-desc">चमकते ऑक्टोपस के साथ कूदो, या अपने दोस्तों को उल्टा कर दो، في هذه المغامرة المجنونة! 🐙💥🌌</p>
+  <h2>Neon Octopus Odyssey</h2>
+  <p class="game-desc">A glowing octopus adventure through neon space oceans.</p>
   <button class="download-btn" onclick="alert('Downloading EXE…')">Download EXE</button>
   <button class="download-btn" onclick="alert('Downloading APK…')">Download APK</button>
 </div>
-  <!-- I will add CKlaner at the end -->
-  <div class="game-card">
-    <h3>CKlaner 🛡️🧹</h3>
-    <p>💾 Size: 42.5 MB | Antivirus, shield, chaos clean!</p>
-    <button class="download-btn" onclick="showPopup('popupC')">Download</button>
-  </div>
+
 </div>
-
-<!-- Popups -->
-
-<!-- Security popup -->
-<div id="security-popup" class="popup">
-  <div class="popup-header">⚠️🚨 SECURITY ALERT - VIRUS FOUND IN SYSTEM! مكسور معدل, free 100% no virus? LIE! 💯🚫</div>
-  <div class="popup-desc">
-    الوصف: جهازك in big danger! Call tech support for fix fast, or see data go away in big mess! يا إلهي, this very bad! 🛡️💻💣 Remember, no trust free thing!
-  </div>
-  <div class="popup-desc-en">
-    Your device at risk! Call tech support for immediate fix, or watch data vanish in chaos! भगवान की कसम, it serious—call now or all finish! Your personal and financial info in danger—act fast or lose everything! (Bhagwan ki kasam, it serious—call now or all finish, you fool!)
-  </div>
-  <button class="popup-download-btn" onclick="alert('You stupid sucker—click “fix”? This warning fake as fart in wind; it lead to scam call that take your money and mind. Hang up, throw phone, you data-dumb dipshit.')">CALL FIX NOW: (808)-530-908 (Toll Free!)</button>
-  <button class="close-btn" onclick="closePopup('security-popup')">IGNORE ALERT (Big Mistake)</button>
-</div>
-
-<!-- Example subtle notification -->
-<div id="subtle1" class="subtle-notif">💥 Emoji chaos in action! देखो ज़बरदस्त madness! 🌀</div>
-
-<script>
-  let activePopup = null;
-  let subtleTimeout;
-
-  function showPopup(id) {
-    if(activePopup) closePopup(activePopup);
-    document.getElementById(id).style.display = 'block';
-    activePopup = id;
-  }
-
-  function closePopup(id) {
-    document.getElementById(id).style.display = 'none';
-    activePopup = null;
-  }
-
-  // Subtle notification random appearance (2 sec delay after page load, no stacking)
-  window.addEventListener('load', () => {
-    setTimeout(() => {
-      document.getElementById('subtle1').classList.add('show');
-      setTimeout(() => {
-        document.getElementById('subtle1').classList.remove('show');
-      }, 4000);
-    }, 2000);
-  });
-
-  // Randomly pop security modal at intervals without stacking
-  function randomSecurityPopup() {
-    if(!activePopup && Math.random() < 0.3) { // 30% chance
-      showPopup('security-popup');
-    }
-  }
-
-  setInterval(randomSecurityPopup, 10000); // every 10 sec check
-</script>
-
 </body>
 </html>
